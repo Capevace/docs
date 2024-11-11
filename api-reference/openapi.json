@@ -47,10 +47,7 @@
       },
         "/api/sync/v2/estates": {
             "get": {
-                "tags": [
-                    "Sync"
-                ],
-                "summary": "List all estates",
+                "description": "List all estates",
                 "parameters": [
                     {
                         "name": "withTrashed",
@@ -61,8 +58,34 @@
                             "type": "boolean"
                         }
                     }
-                ]
+                ],
+                "responses": {
+          "200": {
+            "description": "Plant response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Plant"
+                  }
+                }
+              }
             }
+          },
+          "400": {
+            "description": "Unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+            },
+            
         }
     }
 }
