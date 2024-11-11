@@ -4,11 +4,6 @@
         "title": "domos",
         "version": "1.0.0"
     },
-    "servers": [
-        {
-            "url": "https:\/\/domos.test"
-        }
-    ],
     "paths": {
         "\/api\/sync\/v2\/estates": {
             "get": {
