@@ -44,48 +44,6 @@
             }
           }
         }
-      },
-        "/estates": {
-            "get": {
-                "description": "List all estates",
-                "parameters": [
-                    {
-                        "name": "withTrashed",
-                        "in": "query",
-                        "description": "Display trashed users too",
-                        "required": false,
-                        "schema": {
-                            "type": "boolean"
-                        }
-                    }
-                ],
-                "responses": {
-          "200": {
-            "description": "Plant response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Plant"
-                  }
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        }
-            },
-            
-        }
+      }
     }
 }
