@@ -45,7 +45,7 @@
           }
         }
       },
-        "/api/sync/v2/estates": {
+        "/estates": {
             "get": {
                 "description": "List all estates",
                 "parameters": [
