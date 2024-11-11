@@ -60,7 +60,7 @@
         }
       },
       "post": {
-        "description": "Creates a new plant in the store",
+        "description": "make plant",
         "requestBody": {
           "description": "Plant to add to the store",
           "content": {
@@ -74,7 +74,7 @@
         },
         "responses": {
           "200": {
-            "description": "plant response",
+            "description": "got plant",
             "content": {
               "application/json": {
                 "schema": {
